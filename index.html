@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Upkar Digital Library | A Self Study Center</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #172033;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #173b7a;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #173b7a, #2864c7);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: white;
+      color: #173b7a;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 7%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #173b7a;
+    }
+
+    .contact {
+      background: #ffffff;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Upkar Digital Library</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>Upkar Digital Library</h1>
+      <p>A Self Study Center for Focused Learning</p>
+      <a href="#contact" class="btn">Admissions Open</a>
+    </div>
+  </section>
+
+  <section id="facilities">
+    <h2>Our Facilities</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>📚 Self Study</h3>
+        <p>Peaceful and focused environment for serious study.</p>
+      </div>
+
+      <div class="card">
+        <h3>❄️ Air Conditioned</h3>
+        <p>Comfortable environment for long study sessions.</p>
+      </div>
+
+      <div class="card">
+        <h3>📹 CCTV Security</h3>
+        <p>Safe and secure study environment.</p>
+      </div>
+
+      <div class="card">
+        <h3>💧 RO Water</h3>
+        <p>Clean drinking water facility available.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Upkar Digital Library is a modern self-study center
+      designed for students who want a peaceful, comfortable
+      and productive environment for their preparation.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Upkar Digital Library</strong></p>
+    <p>Admissions Open</p>
+    <br>
+    <a class="btn" href="tel:+91XXXXXXXXXX">Contact Now</a>
+  </section>
+
+  <footer>
+    © 2026 Upkar Digital Library. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
