@@ -4,197 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Upkar Digital Library | A Self Study Center</title>
+  <title>Upkar Digital Library | Faridpur, Sarnath</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+  <meta name="description"
+        content="Upkar Digital Library - A peaceful and modern study space near Ring Road Over Bridge, Faridpur, Sarnath, Varanasi. Open 7 AM to 8 PM.">
 
-    body {
-      background: #f5f7fb;
-      color: #172033;
-    }
+  <meta name="theme-color" content="#0f172a">
 
-    header {
-      background: #ffffff;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    .logo {
-      font-size: 22px;
-      font-weight: 800;
-      color: #173b7a;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      margin-left: 20px;
-      font-weight: 600;
-    }
-
-    .hero {
-      min-height: 82vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #173b7a, #2864c7);
-      color: white;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      background: white;
-      color: #173b7a;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 60px 7%;
-      text-align: center;
-    }
-
-    section h2 {
-      font-size: 32px;
-      margin-bottom: 35px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 30px 20px;
-      border-radius: 14px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      margin-bottom: 12px;
-      color: #173b7a;
-    }
-
-    .contact {
-      background: #ffffff;
-    }
-
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 25px;
-    }
-
-    @media (max-width: 700px) {
-      .hero h1 {
-        font-size: 34px;
-      }
-
-      nav {
-        display: none;
-      }
-    }
-  </style>
+  <!-- Website CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">Upkar Digital Library</div>
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="home">
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#facilities">Facilities</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container nav">
+
+      <a href="#home" class="logo">
+        <span class="logo-icon">📚</span>
+        <span>
+          <strong>Upkar</strong>
+          <small>Digital Library</small>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#timing">Timing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-button" href="tel:7991597171">
+        Call Now
+      </a>
+
+    </div>
+
   </header>
 
-  <section class="hero" id="home">
-    <div>
-      <h1>Upkar Digital Library</h1>
-      <p>A Self Study Center for Focused Learning</p>
-      <a href="#contact" class="btn">Admissions Open</a>
-    </div>
-  </section>
 
-  <section id="facilities">
-    <h2>Our Facilities</h2>
+  <!-- ================= HERO ================= -->
+  <main>
 
-    <div class="cards">
+    <section class="hero">
 
-      <div class="card">
-        <h3>📚 Self Study</h3>
-        <p>Peaceful and focused environment for serious study.</p>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+
+        <div class="hero-badge">
+          📖 Your Study. Your Focus. Your Future.
+        </div>
+
+        <h1>
+          Study Better.<br>
+          <span>Achieve More.</span>
+        </h1>
+
+        <p>
+          Welcome to <strong>Upkar Digital Library</strong> —
+          a peaceful and comfortable place designed for focused study
+          and exam preparation.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#contact" class="btn btn-primary">
+            📍 Find Us
+          </a>
+
+          <a href="tel:7991597171" class="btn btn-secondary">
+            📞 Call 7991597171
+          </a>
+
+        </div>
+
+        <div class="hero-info">
+
+          <div>
+            <span>🕖</span>
+            <strong>7 AM – 8 PM</strong>
+            <small>Open Daily</small>
+          </div>
+
+          <div>
+            <span>📍</span>
+            <strong>Faridpur, Sarnath</strong>
+            <small>Varanasi</small>
+          </div>
+
+          <div>
+            <span>🎯</span>
+            <strong>Focused Study</strong>
+            <small>Peaceful Environment</small>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="card">
-        <h3>❄️ Air Conditioned</h3>
-        <p>Comfortable environment for long study sessions.</p>
-      </div>
+    </section>
 
-      <div class="card">
-        <h3>📹 CCTV Security</h3>
-        <p>Safe and secure study environment.</p>
-      </div>
 
-      <div class="card">
-        <h3>💧 RO Water</h3>
-        <p>Clean drinking water facility available.</p>
-      </div>
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about">
 
-    </div>
-  </section>
+      <div class="container">
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      Upkar Digital Library is a modern self-study center
-      designed for students who want a peaceful, comfortable
-      and productive environment for their preparation.
-    </p>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Upkar Digital Library</strong></p>
-    <p>Admissions Open</p>
-    <br>
-    <a class="btn" href="tel:+91XXXXXXXXXX">Contact Now</a>
-  </section>
-
-  <footer>
-    © 2026 Upkar Digital Library. All Rights Reserved.
-  </footer>
-
-</body>
-</html>
+        <div class="section-heading">
+          <span>ABOUT US</span>
+          <h2>A Place Made for <strong>Focused Learning</strong></h2>
+          <p>
+            At Upkar Digital Library, we believe that a peaceful environment
+            can make studying easier, better and more productive.
